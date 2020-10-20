@@ -5,7 +5,7 @@ Marn-record-amrgithub.com/dermvpure/react-native-audios
 - Record and play audio in iOS or Android React Native apps converted to amr format.
 
 ## Usage
-recordrn-record-amr
+rn-record-amr
 ```js
 import { AudioRecorder, AudioUtils, Sound } from 'rn-record-amr';
 let audioPath = AudioUtils.DocumentDirectoryPath + '/test.amr',
