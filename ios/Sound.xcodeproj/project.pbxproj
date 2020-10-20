@@ -11,6 +11,7 @@
 		98E58AA9253EE0310044BE8A /* libopencore-amrnb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 98E58AA5253EE0310044BE8A /* libopencore-amrnb.a */; };
 		98E58AAA253EE0310044BE8A /* amr_wav_converter.c in Sources */ = {isa = PBXBuildFile; fileRef = 98E58AA6253EE0310044BE8A /* amr_wav_converter.c */; };
 		98E58AAB253EE0310044BE8A /* RNSound.m in Sources */ = {isa = PBXBuildFile; fileRef = 98E58AA7253EE0310044BE8A /* RNSound.m */; };
+		98E58AE2253EFE6A0044BE8A /* dummy.c in Sources */ = {isa = PBXBuildFile; fileRef = 98E58AE1253EFE6A0044BE8A /* dummy.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +35,8 @@
 		98E58AA5253EE0310044BE8A /* libopencore-amrnb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrnb.a"; sourceTree = "<group>"; };
 		98E58AA6253EE0310044BE8A /* amr_wav_converter.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = amr_wav_converter.c; sourceTree = "<group>"; };
 		98E58AA7253EE0310044BE8A /* RNSound.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNSound.m; sourceTree = "<group>"; };
+		98E58AE0253EFE6A0044BE8A /* dummy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dummy.h; sourceTree = "<group>"; };
+		98E58AE1253EFE6A0044BE8A /* dummy.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = dummy.c; sourceTree = "<group>"; };
 		F4FF95D5245B92E700C19C63 /* Sound-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sound-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -60,6 +63,8 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
+				98E58AE0253EFE6A0044BE8A /* dummy.h */,
+				98E58AE1253EFE6A0044BE8A /* dummy.c */,
 				98E58AA2253EE0310044BE8A /* AmrConverter */,
 				98E58A9F253EE0310044BE8A /* AudioRecorderManager.h */,
 				98E58AA1253EE0310044BE8A /* AudioRecorderManager.m */,
@@ -145,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98E58AE2253EFE6A0044BE8A /* dummy.c in Sources */,
 				98E58AAA253EE0310044BE8A /* amr_wav_converter.c in Sources */,
 				98E58AA8253EE0310044BE8A /* AudioRecorderManager.m in Sources */,
 				98E58AAB253EE0310044BE8A /* RNSound.m in Sources */,
@@ -260,7 +266,11 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/AmrConverter/Codec",
 				);
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"$(inherited)",
+					"-lc++",
+				);
 				PRODUCT_NAME = Sound;
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "Sound-Bridging-Header.h";
@@ -282,7 +292,11 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/AmrConverter/Codec",
 				);
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"$(inherited)",
+					"-lc++",
+				);
 				PRODUCT_NAME = Sound;
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "Sound-Bridging-Header.h";
