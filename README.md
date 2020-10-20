@@ -1,4 +1,4 @@
-Marn-record-amrgithub.com/dermvpure/react-native-audios
+Main github repo github.com/dermvpure/react-native-audios
 
 # rn-record-amr
 
