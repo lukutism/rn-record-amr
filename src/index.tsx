@@ -1,9 +1,4 @@
-import { NativeModules } from 'react-native';
+import Sound from './AudioSound';
+import { AudioRecorder, AudioUtils } from './AudioRecorder';
 
-type SoundType = {
-  multiply(a: number, b: number): Promise<number>;
-};
-
-const { Sound } = NativeModules;
-
-export default Sound as SoundType;
+module.exports = { AudioRecorder, AudioUtils, Sound };
