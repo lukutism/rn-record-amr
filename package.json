@@ -1,5 +1,5 @@
 {
-  "name": "react-native-sound",
+  "name": "rn-record-amr",
   "version": "0.1.0",
   "description": "-",
   "main": "lib/commonjs/index",
@@ -13,7 +13,7 @@
     "android",
     "ios",
     "cpp",
-    "react-native-sound.podspec",
+    "rn-record-amr.podspec",
     "!lib/typescript/example"
   ],
   "scripts": {
@@ -30,13 +30,13 @@
     "ios",
     "android"
   ],
-  "repository": "https://github.com/lukutism/react-native-sound",
+  "repository": "https://github.com/lukutism/rn-record-amr",
   "author": "Lukas <lukutim@gmail.com> (https://github.com/lukutism)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/lukutism/react-native-sound/issues"
+    "url": "https://github.com/lukutism/rn-record-amr/issues"
   },
-  "homepage": "https://github.com/lukutism/react-native-sound#readme",
+  "homepage": "https://github.com/lukutism/rn-record-amr#readme",
   "devDependencies": {
     "@commitlint/config-conventional": "^8.3.4",
     "@react-native-community/bob": "^0.16.2",
